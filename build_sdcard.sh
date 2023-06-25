@@ -353,10 +353,10 @@ apt autoremove -y
 
 echo -e "\n*** Python DEFAULT libs & dependencies ***"
 
-if [ -f "/usr/bin/python3.9" ]; then
-  # use python 3.9 if available
-  update-alternatives --install /usr/bin/python python /usr/bin/python3.9 1
-  echo "python calls python3.9"
+if [ -f "/usr/bin/python3.11" ]; then
+  # use python 3.11 if available
+  update-alternatives --install /usr/bin/python python /usr/bin/python3.11 1
+  echo "python calls python3.11"
 elif [ -f "/usr/bin/python3.10" ]; then
   # use python 3.10 if available
   update-alternatives --install /usr/bin/python python /usr/bin/python3.10 1
